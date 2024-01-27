@@ -1,0 +1,84 @@
+
+.coursecontainer { 
+    display: flex;
+    flex-direction: row;
+    flex: content;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin: 50px auto;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .Educontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 40px auto;
+  }
+
+  p {
+    font-size: larger;
+    text-align: center;
+  }
+
+
+  @media ((min-width: 320px) and (max-width: 480px)) {
+    .coursecontainer {
+        display: block;
+        width: 300px;
+    }
+
+    .Educontainer {
+        display: block;
+        width: 300px;
+    }
+
+  }
+
+  @media ((min-width: 481px) and (max-width: 768px)) {
+    .coursecontainer {
+        display: block;
+        width: 400px;
+    }
+
+    .Educontainer {
+        display: block;
+        width: 400px;
+    }
+  }
+  
+  @media ((min-width: 769px) and (max-width: 1024px)) {
+    .coursecontainer {
+        display: flex;
+        width: 700px;
+        margin: 40px auto;
+        gap: 30px;
+    }
+
+    .Educontainer {
+        width: 400px;
+    }
+  }
+
+
+@media ((min-width: 1025px) and (max-width: 1440px)) {
+    .coursecontainer {
+        width: 1025px;
+        margin: 40px auto;
+        gap: 30px;
+    }
+
+    .Educontainer {
+        width: 700px;
+    }
+
+
+}
