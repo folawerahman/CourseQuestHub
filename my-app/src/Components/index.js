@@ -1,5 +1,4 @@
 export * from "./Navbar"
-export * from "./CareerPath"
 export * from "./MidSection"
 export * from "./UniqueFeatures"
 export * from "./Partners"
