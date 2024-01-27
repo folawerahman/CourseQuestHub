@@ -1,8 +1,13 @@
-import { Navbar } from "./Components/Navbar";
+// import { Navbar } from "./Components/Navbar";
+import {Navbar, UniqueFeat, Partners } from "./Components";
 
 function App() {
   return (
-    <Navbar/>
+    <div>
+      <Navbar/>
+      <UniqueFeat/>
+      <Partners/>
+    </div>
   );
 }
 

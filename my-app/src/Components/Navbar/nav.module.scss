@@ -3,16 +3,16 @@
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-}
 
-.logo {
-    display: flex;
-    align-items: center;
+    &>*{
+        display: flex;
+        align-items: center;
+    }
 }
 
 .navButton>* {
     margin: 10px;
-    border: none;
+    border: 1px solid #000;
     border-radius: 10px;
     padding: 16px 32px;
     width: 126px;
@@ -24,4 +24,35 @@
     &.registerButton {
         background: #78B3FE;
     }
+}
+
+@media ((min-width: 320px) and (max-width: 480px)) {
+    .navContainer {
+        margin: 0px;
+        gap: 3px; 
+    }
+    
+    .navButton>* {
+        margin: 3px; 
+        padding: 5px 3px;
+        width: 56px;
+          
+    }
+
+}
+
+@media ((min-width: 481px) and (max-width: 768px)) {
+
+}
+
+@media ((min-width: 769px) and (max-width: 1024px)) {
+
+}
+
+@media ((min-width: 1025px) and (max-width: 1200px)) {
+
+}
+
+@media (min-width: 1201px) {
+
 }
