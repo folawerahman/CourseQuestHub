@@ -1,5 +1,5 @@
 // import { Navbar } from "./Components/Navbar";
-import {Navbar, UniqueFeat, Partners, CareerPath, MidSection } from "./Components";
+import {Navbar,CareerPath, MidSection, UniqueFeat, Partners } from "./Components";
 
 function App() {
   return (
