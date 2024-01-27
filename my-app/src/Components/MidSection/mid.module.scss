@@ -58,9 +58,10 @@
   @media ((min-width: 769px) and (max-width: 1024px)) {
     .coursecontainer {
         display: flex;
+        flex-wrap: wrap;
         width: 700px;
-        margin: 40px auto;
-        gap: 30px;
+        margin: auto;
+        
     }
 
     .Educontainer {
