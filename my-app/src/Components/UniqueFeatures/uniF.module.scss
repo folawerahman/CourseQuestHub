@@ -1,0 +1,234 @@
+.featContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    margin: 50px auto;
+    gap: 140px;
+}
+
+.featCard {
+    border-radius: 15px;
+    border: 1px solid rgba(1, 114, 240, 0.50);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+    width: 400px;
+    height: 204px;
+    margin: 20px auto;
+
+    &>* {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+}
+
+.bluecircle {
+    background-color: #78B3FE;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin: 20px auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-width: 260px;
+    height: 190px;
+    position: absolute;
+    z-index: 1000;
+}
+
+
+@media ((min-width: 320px) and (max-width: 480px)) {
+    .featContainer {
+        display: block;
+        width: 300px;
+    }
+
+    .bluecircle {
+        width: 190px;
+        height: 70px;
+        display: none;
+        // width: 108px;
+        // height: 20px;
+
+        // &>h3{
+        //     display: none;
+        // }
+    }
+
+    .featCard {
+        width: 250px;
+        height: 164px;
+        margin: 20px auto;
+        border: none;
+        box-shadow: none;
+
+
+        &>* {
+            border-radius: 15px;
+            border: 1px solid rgba(1, 114, 240, 0.50);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            align-items: center;
+            margin-bottom: 15px;
+        }
+    }
+
+}
+
+@media ((min-width: 481px) and (max-width: 768px)) {
+    .featContainer {
+        gap: 60px;
+    }
+
+    .featCard {
+        width: 260px;
+        height: 204px;
+        margin: 15px auto;
+        // gap: 120px;
+
+        &>* {
+            width: 80%;
+        }
+
+    }
+
+    .bluecircle {
+        min-width: 190px;
+        height: 120px;
+    }
+
+}
+
+@media ((min-width: 769px) and (max-width: 1024px)) {
+    .featContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 400px;
+        margin: 10px auto;
+        gap: 140px;
+
+    }
+
+    .featCard {
+        border-radius: 15px;
+        border: 1px solid rgba(1, 114, 240, 0.50);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        flex-shrink: 0;
+        width: 400px;
+        height: 204px;
+        margin: 20px auto;
+
+        &>* {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 30px auto;
+        }
+
+    }
+
+    .bluecircle {
+        background-color: #78B3FE;
+        border-radius: 50%;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin: 20px auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-width: 260px;
+        height: 190px;
+        position: absolute;
+        z-index: 1000;
+    }
+
+}
+
+@media ((min-width: 1025px) and (max-width: 1440px)) {
+    .featContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 400px;
+        margin: 10px auto;
+        gap: 140px;
+
+    }
+
+    .featCard {
+        border-radius: 15px;
+        border: 1px solid rgba(1, 114, 240, 0.50);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        flex-shrink: 0;
+        width: 400px;
+        height: 204px;
+        margin: 20px auto;
+
+        &>* {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 30px auto;
+        }
+
+    }
+
+    .bluecircle {
+        background-color: #78B3FE;
+        border-radius: 50%;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin: 20px auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        min-width: 260px;
+        height: 190px;
+        position: absolute;
+        z-index: 1000;
+    }
+}
+
+// @media (min-width: 1200px) and (max-width: 1440px) {
+//     .featContainer {
+//         width: 1000px;
+//         margin: 40px auto;
+//         gap: 300px;
+//     }
+
+//     .featCard {
+//         width: 500px;
+//         height: 220px;
+//         margin: 30px auto;
+//     }
+
+//     .bluecircle {
+//         min-width: 460px;
+//         height: 230px;
+//     }
+
+// }
+
+@media (min-width: 1440px) {
+    .featContainer {
+        width: 1000px;
+        margin: 40px auto;
+        gap: 300px;
+    }
+
+    .featCard {
+        width: 500px;
+        height: 220px;
+        margin: 30px auto;
+    }
+
+    .bluecircle {
+        min-width: 460px;
+        height: 230px;
+    }
+
+}
