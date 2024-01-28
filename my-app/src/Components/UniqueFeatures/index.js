@@ -5,6 +5,7 @@ import GradCap from "../../Assets/Images/GradCap.svg";
 import QuesMark from "../../Assets/Images/QuesMark.svg";
 import Institution from "../../Assets/Images/Institution.svg";
 import Ellipse from "../../Assets/Images/Ellipse-Features.svg";
+import MidSection from "../MidSection";
 
 export const UniqueFeat = () => {
     const [mobileCard, setMobileCard] = useState("320px");
