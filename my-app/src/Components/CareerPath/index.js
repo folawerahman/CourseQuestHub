@@ -10,10 +10,10 @@ export const CareerPath = ()  => {
             <div className={style.careerText}>
                 <h2>Wondering what path to go next?</h2>
                 <p>Discover your dream career right here</p>
-                <div className={style.navButton} >
+                {/* <div className={style.navButton} >
             <button className={style.loginButton} >Login</button>
             <button className={style.registerButton}>Register</button>
-        </div>
+        </div> */}
             </div>
 
         {/* Image Component */}
