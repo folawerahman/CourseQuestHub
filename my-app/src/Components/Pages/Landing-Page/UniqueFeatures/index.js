@@ -1,20 +1,13 @@
 import React, {useState} from "react";
 import style from "./uniF.module.scss";
-import Quiz from "../../Assets/Images/Quiz.svg";
-import GradCap from "../../Assets/Images/GradCap.svg";
-import QuesMark from "../../Assets/Images/QuesMark.svg";
-import Institution from "../../Assets/Images/Institution.svg";
-import Ellipse from "../../Assets/Images/Ellipse-Features.svg";
+import Quiz from "../../../../Assets/Images/Quiz.svg";
+import GradCap from "../../../../Assets/Images/GradCap.svg";
+import QuesMark from "../../../../Assets/Images/QuesMark.svg";
+import Institution from "../../../../Assets/Images/Institution.svg";
+import Ellipse from "../../../../Assets/Images/Ellipse-Features.svg";
 import MidSection from "../MidSection";
 
 export const UniqueFeat = () => {
-    const [mobileCard, setMobileCard] = useState("320px");
-
-    const handleMobileCard = () =>{
-      if (mobileCard === "featCard"){
-
-      }  
-    }
 
     return(
         <div>
