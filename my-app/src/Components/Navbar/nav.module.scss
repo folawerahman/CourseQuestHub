@@ -2,9 +2,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    background: #023;
+    height: 80px;
+    padding: 10px 15px;
+    color: #fff;
 
-    &>*{
+    &>* {
         display: flex;
         align-items: center;
     }
@@ -14,45 +17,38 @@
     margin: 10px;
     border: 1px solid #000;
     border-radius: 10px;
-    padding: 16px 32px;
-    width: 126px;
+    padding: 12px ;
+    width: 110px;
 
     &.loginButton {
         background: #F5F5F5;
     }
 
     &.registerButton {
-        background: #78B3FE;
+        background: #3173C8;
+        color: #fff;
     }
 }
 
 @media ((min-width: 320px) and (max-width: 480px)) {
     .navContainer {
         margin: 0px;
-        gap: 3px; 
+        gap: 3px;
     }
-    
+
     .navButton>* {
-        margin: 3px; 
+        margin: 3px;
         padding: 5px 3px;
         width: 56px;
-          
+
     }
 
 }
 
-@media ((min-width: 481px) and (max-width: 768px)) {
+@media ((min-width: 481px) and (max-width: 768px)) {}
 
-}
+@media ((min-width: 769px) and (max-width: 1024px)) {}
 
-@media ((min-width: 769px) and (max-width: 1024px)) {
+@media ((min-width: 1025px) and (max-width: 1200px)) {}
 
-}
-
-@media ((min-width: 1025px) and (max-width: 1200px)) {
-
-}
-
-@media (min-width: 1201px) {
-
-}
+@media (min-width: 1201px) {}

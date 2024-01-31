@@ -1,15 +1,22 @@
-// import { Navbar } from "./Components/Navbar";
-import {Navbar,CareerPath, MidSection, UniqueFeat, Partners } from "./Components";
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+import { LandingPage, HomePage, Navbar } from "./Components";
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <CareerPath/>
-      <MidSection/>
-      <UniqueFeat/>
-      <Partners/>
-    </div>
+    <Router>
+      {/* <Navbar/> */}
+      <Routes>
+        <Route exact path="/" element={<HomePage/>}/>
+        <Route path="/HomePage" element={<HomePage/>}/>
+        <Route path="/LandingPage" element={<LandingPage/>}/>
+        <Route path="/LandingPage" element={<LandingPage/>}/>
+      </Routes>
+    </Router>
   );
 }
 

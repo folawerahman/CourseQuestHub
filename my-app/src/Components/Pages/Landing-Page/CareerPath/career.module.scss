@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 35px 15px;
+    margin: 35px;
 }
 
 .navButton>* {
@@ -23,6 +23,11 @@
 
 .careerText{
     padding: 10px;
+    font-size: 1.3em;
+}
+
+.path>*{
+    width: 350px;
 }
 
 
@@ -55,7 +60,7 @@
     }
 
     .careerText{
-        font-size: 1.3em;
+        font-size: 1em;
     }
 
 }
@@ -66,23 +71,21 @@
     }
 
     .careerText{
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
 }
 
 @media ((min-width: 1025px) and (max-width: 1200px)) {
     .path>*{
-        width: 400px;
+        width: 300px;
     }
 
     .careerText{
-        font-size: 1.7em;
+        font-size: 1em;
     }
 }
 
 @media (min-width: 1201px) {
-    .careerText{
-        font-size: 2em;
-    }
+   
 }
