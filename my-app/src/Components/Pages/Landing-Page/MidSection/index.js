@@ -13,6 +13,7 @@ export const MidSection = () => {
     const [courseSection, setcourseSection] = useState("250px"); 
 
     return( 
+    <section>
         
         <div className={style.coursecontainer}>
 
@@ -45,6 +46,6 @@ export const MidSection = () => {
                 </div>
 
         </div>
-      
-      )
+    </section>
+    )
     }

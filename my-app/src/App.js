@@ -4,7 +4,9 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { LandingPage, HomePage, Navbar } from "./Components";
+import { LandingPage, HomePage, Navbar} from "./Components";
+import { Register } from "./Components/Pages/Register";
+
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
         <Route exact path="/" element={<HomePage/>}/>
         <Route path="/HomePage" element={<HomePage/>}/>
         <Route path="/LandingPage" element={<LandingPage/>}/>
-        <Route path="/LandingPage" element={<LandingPage/>}/>
+        <Route path="src/Components/Pages/Register" element={<Register/>}/>
       </Routes>
     </Router>
   );

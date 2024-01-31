@@ -1,5 +1,6 @@
 import style from "./nav.module.scss"
 import Logo from "../../Assets/Images/Logo.svg" ;
+import { NavLink as Link } from "react-router-dom";
 
 
 export const Navbar = () => {
@@ -14,7 +15,7 @@ export const Navbar = () => {
 
         <div className={style.navButton} >
             <button className={style.loginButton} >Login</button>
-            <button className={style.registerButton}>Register</button>
+            <a href="src/Components/Pages/Register"><button className={style.registerButton}>Register</button></a>
         </div>
 
 

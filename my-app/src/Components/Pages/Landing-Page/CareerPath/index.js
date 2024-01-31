@@ -2,7 +2,8 @@ import style from "./career.module.scss";
 import Vector from "../../../../Assets/Images/CareerPath.svg";
 export const CareerPath = ()  => {
     return(
-        // Parent component
+        <section>
+        {/* // Parent component */}
         <div className={style.careerContainer} >
 
         {/* Login component */}
@@ -19,5 +20,6 @@ export const CareerPath = ()  => {
             <div className={style.path}><img src={Vector} alt="" /></div>
 
         </div>
+        </section>
     )
 }
