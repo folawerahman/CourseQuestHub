@@ -13,6 +13,7 @@ export const MidSection = () => {
 
     return( 
         
+    <div className={style.shrink}>
         <div className={style.coursecontainer}>
 
                 <div className={style.container}>
@@ -44,6 +45,6 @@ export const MidSection = () => {
                 </div>
 
         </div>
-      
+    </div>  
       )
     }

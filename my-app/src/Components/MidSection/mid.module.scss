@@ -1,6 +1,6 @@
 
 .coursecontainer { 
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex: content;
     align-items: center;
@@ -9,19 +9,24 @@
     margin: 50px auto;
   }
   .container {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+  }
+
+  .Educontainer {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
   }
-  .Educontainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 30px auto;
+
+  .shrink{ 
+    display: inline-flex;
+    flex-direction: column;
   }
 
   p {
