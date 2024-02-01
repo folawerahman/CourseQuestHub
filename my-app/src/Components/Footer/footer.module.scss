@@ -1,0 +1,19 @@
+.footerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    background: #023;
+    color: #fff;
+    padding-bottom: 35px;
+}
+
+.socials{
+    &>*{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,58 @@
+.welcomebg{
+    // height: 50vw;
+    background-image: url(../../../../Assets/Images/welcomeImage.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+
+    &>h2{
+        color: #78B3FE;
+        margin: 0px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+
+    &>.welcomeContainer{
+        display: flex;
+        align-items: center;
+        margin: 30px;
+
+        
+        &>.welcomeText{
+            margin: 10px;
+            width: 60%;
+
+            &>p{
+                font-weight: 700;
+                font-size: 16px;
+                text-align: unset;
+            }
+            // padding: 20px;
+            
+        }
+    }
+
+
+   
+
+    &>div>div>h3>span{
+        color: #78B3FE;
+        
+    }
+    
+}
+
+.watchButton{
+    background: #3173C8;
+    text-align: center;
+    // width: 300px;
+    padding: 5px 0px;  
+}
+
+// .helloImage{
+//     // position: relative;
+//     // z-index: 1000;
+//     // bottom: 160px;
+// }

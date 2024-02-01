@@ -1,6 +1,5 @@
-import style from "./career.module.scss";
-import Path from "../../Assets/Images/CareerPath.svg" 
-
+import style from "./career.module.scss"; 
+import Vector from "../../../../Assets/Images/CareerPath.svg";
 export const CareerPath = ()  => {
     return(
         // Parent component
@@ -10,14 +9,14 @@ export const CareerPath = ()  => {
             <div className={style.careerText}>
                 <h2>Wondering what path to go next?</h2>
                 <p>Discover your dream career right here</p>
-                <div className={style.navButton} >
+                {/* <div className={style.navButton} >
             <button className={style.loginButton} >Login</button>
             <button className={style.registerButton}>Register</button>
-        </div>
+        </div> */}
             </div>
 
         {/* Image Component */}
-            <div className={style.path}><img src={Path} alt="" /></div>
+            <div className={style.path}><img src={Vector} alt="" /></div>
 
         </div>
     )

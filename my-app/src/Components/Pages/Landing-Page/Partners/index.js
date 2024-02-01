@@ -1,5 +1,5 @@
 import style from "./partners.module.scss";
-import UKHub from "../../Assets/Images/UkHub.svg";
+import UKHub from "../../../../Assets/Images/UkHub.svg";
 
 export const Partners = () => {
     return(
