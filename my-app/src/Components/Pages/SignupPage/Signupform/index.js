@@ -53,7 +53,7 @@ export function Signupform () {
             </Form.Group>
             
           <div className="d-grid gap-2" >
-              <Button variant="primary" type="" size="lg"> Sign In </Button>
+              <Button variant="primary" type="" size="lg"> Sign Up </Button>
           </div>
           
         </Form>
