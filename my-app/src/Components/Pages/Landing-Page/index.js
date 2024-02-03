@@ -1,18 +1,22 @@
 import { Navbar } from "../../Navbar";
-import { CareerPath } from "./CareerPath";
+import { Register } from "./CareerPath";
 import { MidSection } from "./MidSection";
-import { UniqueFeat } from "./UniqueFeatures";
-import { Partners } from "./Partners";
+import { Mission } from "./UniqueFeatures";
+import { Testimonials } from "./Partners";
 import { Footer } from "../../Footer";
+import { Vision } from "./Vision";
+import { Article } from "./Article";
 
 export const LandingPage = () => {
     return(
         <div>
             <Navbar/>
-            <CareerPath/>
+            <Register/>
             <MidSection/>
-            <UniqueFeat/>
-            <Partners/>
+            <Mission/>
+            <Testimonials/>
+            <Vision/>
+            <Article/>
             <Footer/>
         </div>
     )

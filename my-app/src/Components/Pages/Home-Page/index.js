@@ -2,7 +2,7 @@ import React from "react";
 import { WelcomeVideo }from "./Welcome-Video"
 import { HomeNavbar } from "./HomeNavBar";
 import { Footer } from "../../Footer";
-import {Partners} from "../Landing-Page/Partners"
+import { Testimonials } from "../Landing-Page/Partners"
 import { FindCourse } from "./FindCourse";
 
 
@@ -12,7 +12,7 @@ export const HomePage = () => {
     <HomeNavbar/>
     <WelcomeVideo/>
     <FindCourse/>
-    <Partners/>
+    <Testimonials/>
     <Footer/>
 </div>
     )

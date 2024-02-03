@@ -10,6 +10,8 @@ import twitter from "../../Assets/Images/devicon_twitter.svg";
 export const Footer = () => {
     return(
         <div className={style.footerContainer}>
+
+        <div className={style.contactContainer}>
             <div>
                 <h5> Contact Us</h5>
                 <NavLink to="tel:09033265715">Phone 1: 09033265715</NavLink>
@@ -37,6 +39,8 @@ export const Footer = () => {
             </span>
 
             </div>
+        </div>
+        <div className={style.copyright}>Contact us | Copyright 2024. All rights reserved.</div>
         </div>
     )
 }

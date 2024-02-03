@@ -1,26 +1,43 @@
-.partners{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 80px;
-    background: #023;
-    height: 120px;
-    color: #fff;
-}
+.testimonialsContainer{
+    margin: 75px;
+    font-weight: 700;
 
-@media ((min-width: 320px) and (max-width: 480px)) {
-    .partners{
-        margin: 10px;
-        gap: 15px;
+    
+    &>*{
+        margin: 25px;
+        text-align: center;
+    }
+    
+    &>p{
+        text-align: justify;
     }
 }
 
-@media ((min-width: 481px) and (max-width: 768px)) {
+.QuoteText{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #3173C8;
 
+    &>p>span{
+        display: block;
+    }
+}
+
+@media ((min-width: 320px) and (max-width: 480px)) {
+    .testimonialsContainer{
+        margin: 70px 30px;
+    }    
+}
+
+@media ((min-width: 481px) and (max-width: 768px)) {
+    .testimonialsContainer{
+        margin: 70px 40px;
+    } 
 }
 
 @media ((min-width: 769px) and (max-width: 1024px)) {
-
+      
 }
 
 @media ((min-width: 1025px) and (max-width: 1440px)) {

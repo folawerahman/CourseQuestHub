@@ -15,11 +15,9 @@ function App() {
     <Router>
       {/* <Navbar/> */}
       <Routes>
-        <Route exact path="/" element={<HomePage/>}/>
+        <Route exact path="/" element={<LandingPage/>}/>
         <Route path="/HomePage" element={<HomePage/>}/>
         <Route path="/LandingPage" element={<LandingPage/>}/>
-        <Route path="src/Components/Pages/SignupPage" element={<SignupPage/>}/>
-        <Route path="src/Components/Pages/LoginPage" element={<LoginPage/>}/>
       </Routes>
     </Router>
   );

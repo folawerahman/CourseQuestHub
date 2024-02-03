@@ -1,25 +1,27 @@
-import style from "./career.module.scss"; 
-import Vector from "../../../../Assets/Images/CareerPath.svg";
-export const CareerPath = ()  => {
+import React from "react";
+import students  from "../../../../Assets/Images/Students.svg";
+import style from "./career.module.scss";
+
+
+export const Register = () => {
+
     return(
-        <section>
-        {/* // Parent component */}
-        <div className={style.careerContainer} >
-
-        {/* Login component */}
-            <div className={style.careerText}>
-                <h2>Wondering what path to go next?</h2>
-                <p>Discover your dream career right here</p>
-                {/* <div className={style.navButton} >
-            <button className={style.loginButton} >Login</button>
-            <button className={style.registerButton}>Register</button>
-        </div> */}
-            </div>
-
-        {/* Image Component */}
-            <div className={style.path}><img src={Vector} alt="" /></div>
-
+        <div className={style.welcomebg}>
+           <div className={style.welcomeContainer}>
+           <div className={style.welcomeText}>
+           <h2>Wondering what path to go next?</h2>
+           <p>Discover your dream career right here</p>
+           <button className={style.register}>Register</button>
+           </div>
+           </div>
+         
         </div>
-        </section>
+
+
+
+
     )
+
+
+
 }

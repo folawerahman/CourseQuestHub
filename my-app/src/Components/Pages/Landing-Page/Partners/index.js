@@ -1,13 +1,22 @@
 import style from "./partners.module.scss";
-import UKHub from "../../../../Assets/Images/UkHub.svg";
+import Quote from "../../../../Assets/Images/Quote-Left.svg";
 
-export const Partners = () => {
-    return(
-        <div className={style.partners}>
+export const Testimonials = () => {
+  return (
+    <div className={style.testimonialsContainer}>
+      <h2>Testimonials</h2>
+      <p>
+        CourseQuestHub was a lifesaver! It helped me ditch the confusion and
+        finally see my future path - Software Engineering here I come!
+      </p>
 
-            <div><h3>Sponsors</h3></div>
-            <div><img src={UKHub} alt=""/></div>
-            <div><h3>DevCareer</h3></div>
-        </div>
-    )
-}
+      <div className={style.QuoteText}>
+        <img alt="" src={Quote} />
+        <p>
+          Abraham Muyiwa<span>SS3 student, Prime College, Abuja</span>
+        </p>
+        <img alt="" src={Quote} />
+      </div>
+    </div>
+  );
+};
