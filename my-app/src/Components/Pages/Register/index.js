@@ -11,7 +11,6 @@ export const Register = () => {
                 <Signup/>
             </div>
             <Google/>
-
         </div>
     )
 }
