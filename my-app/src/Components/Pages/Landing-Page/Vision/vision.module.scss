@@ -1,11 +1,10 @@
-.missionContainer{
+.visionContainer{
     background: #3173C8;
     display: flex;
-    align-items: center;
-    color: #fff; 
+    color: #fff;
 }
 
-.MissionText {
+.visionText {
 text-align: center;
 font-weight: 600;
 margin: 0px 30px;
@@ -19,17 +18,17 @@ margin: 0px 30px;
 
 
 @media ((min-width: 320px) and (max-width: 480px)) {
-    .missionContainer{
+    .visionContainer{
     display: block;
     
     }
    
-    .scientist img{
-        width: 100px;
+    .workman img{
+        width: 120px;
         
     }
 
-    .MissionText {
+    .visionText {
         margin: 15px;
 
         &>*{
@@ -41,19 +40,22 @@ margin: 0px 30px;
 }
 
 @media ((min-width: 481px) and (max-width: 768px)) {
-    .scientist img{
-        width: 200px;
+    .workman img{
+        margin: 70px auto;
+        width: 220px;
         height: 200px;
-        // margin: 60px auto;
         
     }
+
+    .visionText {
+        margin: 15px 20px;   
+        }
 }
 
 @media ((min-width: 769px) and (max-width: 1024px)) {
-    .scientist img{
-        width: 400px;
-        height: 400px;
-        // margin: 60px auto;
+    .workman img{
+        width: 420px;
+        height: 400px;     
     }
 }
 
@@ -62,11 +64,11 @@ margin: 0px 30px;
 }
 
 @media (min-width: 1200px) and (max-width: 1440px) {
-.missionContainer{
+.visionContainer{
     gap: 60px;
 }
 
-.MissionText {
+.visionText {
     text-align: center;
     font-weight: 700;
     font-size: 1.2em;

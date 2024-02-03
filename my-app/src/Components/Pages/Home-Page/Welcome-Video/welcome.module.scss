@@ -1,58 +1,39 @@
 .welcomebg{
     // height: 50vw;
-    background-image: url(../../../../Assets/Images/welcomeImage.svg);
+    background-image: url(../../../../Assets/Images/Students.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: #fff;
-
-    &>h2{
-        color: #78B3FE;
-        margin: 0px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    
+    padding: 35px;   
 
     &>.welcomeContainer{
-        display: flex;
-        align-items: center;
-        margin: 30px;
+        margin: 0px;
+        text-align: center;
 
         
+        
         &>.welcomeText{
-            margin: 10px;
-            width: 60%;
-
-            &>p{
-                font-weight: 700;
-                font-size: 16px;
-                text-align: unset;
+            &>h2{
+                margin: 0px;
             }
-            // padding: 20px;
+
+            // &>p{
+            //     font-weight: 700;
+            //     font-size: 16px;
+            // }
             
         }
     }
-
-
-   
-
-    &>div>div>h3>span{
-        color: #78B3FE;
-        
-    }
     
 }
 
-.watchButton{
-    background: #3173C8;
+
+
+.register{
+    background: #FAB03C;
     text-align: center;
-    // width: 300px;
-    padding: 5px 0px;  
+    padding: 15px 70px; 
+    border: none; 
 }
 
-// .helloImage{
-//     // position: relative;
-//     // z-index: 1000;
-//     // bottom: 160px;
-// }

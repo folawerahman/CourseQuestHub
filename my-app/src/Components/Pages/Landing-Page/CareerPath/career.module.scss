@@ -1,91 +1,61 @@
-.careerContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 35px;
-}
+.welcomebg{
+    // height: 50vw;
+    background-image: url(../../../../Assets/Images/Students.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 35px;   
 
-.navButton>* {
-    margin: 10px;
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 16px 32px;
-    width: 126px;
+    &>.welcomeContainer{
+        margin: 0px;
+        text-align: center;
 
-    &.loginButton {
-        background: #F5F5F5;
+        
+        
+        &>.welcomeText{
+            &>h2{
+                margin: 0px;
+            }
+            
+        }
     }
-
-    &.registerButton {
-        background: #78B3FE;
-    }
+    
 }
 
-.careerText{
-    padding: 10px;
-    font-size: 1.3em;
-}
-
-.path>*{
-    width: 350px;
+.register{
+    background: #FAB03C;
+    text-align: center;
+    padding: 15px 70px; 
+    border: none; 
 }
 
 
 @media ((min-width: 320px) and (max-width: 480px)) {
-    .careerContainer {
-        margin: 10px;
-    }
-    .careerText{
-        padding: 7px;
-    }
-    .navButton {
-        display: flex;
-    }
-    .navButton>* {
-        margin: 3px;
-        padding: 5px 3px;
-        width: 70px;
+    .register{
+        padding: 15px 25px;
+        margin-bottom: 15px; 
 
     }
-    .path>* {
-        width: 125px;
-        height: 125px;
-    }
-
 }
 
 @media ((min-width: 481px) and (max-width: 768px)) {
-    .path>* {
-        width: 250px;
-    }
-
-    .careerText{
-        font-size: 1em;
-    }
 
 }
 
 @media ((min-width: 769px) and (max-width: 1024px)) {
-    .path>* {
-        width: 300px;
-    }
-
-    .careerText{
-        font-size: 1.3em;
-    }
 
 }
 
-@media ((min-width: 1025px) and (max-width: 1200px)) {
-    .path>*{
-        width: 300px;
-    }
+@media ((min-width: 1025px) and (max-width: 1440px)) {
 
-    .careerText{
-        font-size: 1em;
-    }
 }
 
-@media (min-width: 1201px) {
-   
+@media (min-width: 1200px) and (max-width: 1440px) {
+
+
+}
+
+@media (min-width: 1440px) {
+
 }

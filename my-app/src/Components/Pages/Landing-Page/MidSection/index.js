@@ -1,50 +1,61 @@
-import React, {useState} from "react";
+import React from "react";
 import style from "./mid.module.scss";
-import Engineering from "../../../../Assets/Images/Engineering.svg";
-import Tech from "../../../../Assets/Images/Tech.svg";
-import Education from "../../../../Assets/Images/Education.svg";
-import Construction from "../../../../Assets/Images/Construction.svg";
-import Banking from "../../../../Assets/Images/Banking.svg";
-import UniqueFeat from "../UniqueFeatures";
-
-
+import Hospital from "../../../../Assets/Images/Hospital.svg";
+import Tuition from "../../../../Assets/Images/Tuition.svg";
+import ArtPrices from "../../../../Assets/Images/Art-Prices.svg";
+import Grouptask from "../../../../Assets/Images/Group-Task.svg";
+import Law from "../../../../Assets/Images/Law.svg";
+import iMac from "../../../../Assets/Images/iMac.svg";
 
 export const MidSection = () => {
-    const [courseSection, setcourseSection] = useState("250px"); 
+  return (
+    <div className={style.MidSection}>
+      <h3>EXPLORE OUR WIDE ARRAY OF COURSES DESIGNED FOR YOU</h3>
 
-    return( 
-        
-        <div className={style.coursecontainer}>
-
-                <div className={style.container}>
-                        
-                        <div>
-                            <img src={Engineering} alt="" />
-                            <p>Engineering</p> 
-                        </div>
-                        <div>
-                            <img src={Tech} alt="" />
-                            <p>Tech</p>  
-                        </div>
-                        <div>
-                            <img src={Banking} alt="" />
-                            <p>Banking</p>  
-                        </div>
-                        <div>
-                            <img src={Construction} alt="" />
-                            <p>Construction</p>  
-                        </div>
-                       
-                </div> 
-
-                <div className={style.Educontainer}>
-                        <div>
-                                <img src={Education} alt="" />
-                                <p>Education</p>     
-                        </div>
-                </div>
-
+      {/* Explore Courses  */}
+      <div className={style.coursesContainer}>
+        <div className={style.courses}>
+          <div>
+            <img src={Hospital} alt="" />
+          </div>
+          <p>Medicine</p>
         </div>
-      
-      )
-    }
+
+        <div className={style.courses}>
+          <div>
+            <img src={Tuition} alt="" />
+          </div>
+          <p>Education</p>
+        </div>
+
+        <div className={style.courses}>
+          <div>
+            <img src={ArtPrices} alt="" />
+          </div>
+          <p>Art and Humanities</p>
+        </div>
+
+        <div className={style.courses}>
+          <div>
+            <img src={Grouptask} alt="" />
+          </div>
+          <p>Social Science</p>
+        </div>
+
+        <div className={style.courses}>
+          <div>
+            <img src={Law} alt="" />
+          </div>
+          <p>Law</p>
+        </div>
+
+        <div className={style.courses}>
+          <div>
+            <img src={iMac} alt="" />
+          </div>
+          <p>Information Technology</p>
+        </div>
+      </div>
+    </div>
+  );
+};

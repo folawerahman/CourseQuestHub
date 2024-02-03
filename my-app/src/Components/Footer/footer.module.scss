@@ -1,19 +1,28 @@
-.footerContainer{
+.footerContainer {
+    background: #3173C8;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.contactContainer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin-top: 40px;
-    background: #023;
-    color: #fff;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
 }
 
-.socials{
-    &>*{
+.socials {
+    &>* {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 12px;
         padding: 5px;
     }
+}
+
+.copyright {
+    border-top: 1px solid;
+    text-align: center;
+    padding: 15px;
 }
