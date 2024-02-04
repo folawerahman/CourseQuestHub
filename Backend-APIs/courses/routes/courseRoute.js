@@ -1,27 +1,40 @@
 const express = require('express');
-const agricRouter = express.Router();
+const coursesData = require('../modules/courses');
 
-const {
-    agriculture,
-    arts_and_humanities,
-    building_and_architecture,
-    business_and_economics,
-    education,
-    information_technology,
-    law,
-    medical_sciences,
-    social_sciences
-} = require("../modules/courses.js")
+const router = express.Router();
 
-agricRouter.get('/', (req, res) => {
-    res.json(agriculture);
-})
+// Get all departments
+router.get('/departments', (req, res) => {
+  const departments = coursesData.map(course => course.department);
+  res.json({ departments });
+});
 
-agricRouter.get('/:id', (req, res) => {
-    const id = req.params.id
-    const course = agriculture.find(course == agriculture.course_id == id)
+// Get courses by department
+router.get('/departments/:department', (req, res) => {
+  const { department } = req.params;
+  const selectedDepartment = coursesData.find(course => course.department === department);
 
-    res.json(agriculture);
-})
+  if (selectedDepartment) {
+    res.json(selectedDepartment);
+  } else {
+    res.status(404).json({ error: 'Department not found' });
+  }
+});
 
-module.exports = agricRouter;
+// Search courses by keyword
+router.get('/search/:keyword', (req, res) => {
+  const { keyword } = req.params;
+
+  // Filter courses based on the keyword
+  const matchingCourses = coursesData.filter(course =>
+    course.courses.some(courseCode => courseCode.toLowerCase().includes(keyword.toLowerCase()))
+  );
+
+  if (matchingCourses.length > 0) {
+    res.json({ matchingCourses });
+  } else {
+    res.status(404).json({ error: 'No matching courses found' });
+  }
+});
+
+module.exports = router;
