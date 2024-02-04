@@ -4,10 +4,10 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { LandingPage, HomePage, Navbar} from "./Components";
+import { LandingPage, HomePage, Navbar, Register, LoginPage} from "./Components";
 import { SignupPage } from "./Components/Pages/SignupPage";
-import { LoginPage } from "./Components/Pages/LoginPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Signup } from "./Components/Pages/Register/Signup";
 
 
 function App() {
@@ -15,9 +15,11 @@ function App() {
     <Router>
       {/* <Navbar/> */}
       <Routes>
-        <Route exact path="/" element={<LandingPage/>}/>
-        <Route path="/HomePage" element={<HomePage/>}/>
-        <Route path="/LandingPage" element={<LandingPage/>}/>
+        <Route exact path="/HomePage" element={<HomePage/>}></Route>
+        <Route path="/LandingPage" element=
+        {<LandingPage/>}></Route>
+        <Route path="/LoginPage" element={<LoginPage/>}></Route>
+        <Route path="/SignupPage" element={<SignupPage/>}></Route>
       </Routes>
     </Router>
   );

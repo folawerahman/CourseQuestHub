@@ -1,39 +1,71 @@
-.welcomebg{
-    // height: 50vw;
-    background-image: url(../../../../Assets/Images/Students.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.GreetingContainer {
+    padding: 15px ;
+    background-color: #023;
+    // border-radius: 30px;
     color: #fff;
-    padding: 35px;   
+    margin: 32px 0;
+    text-align: center;
+    // position: relative;
 
-    &>.welcomeContainer{
-        margin: 0px;
-        text-align: center;
-
-        
-        
-        &>.welcomeText{
-            &>h2{
-                margin: 0px;
-            }
-
-            // &>p{
-            //     font-weight: 700;
-            //     font-size: 16px;
-            // }
-            
-        }
+    &>*{
+        padding-bottom: 10px
     }
-    
 }
 
+// .greetingCard{
+//     // display: flex;
+//     // align-items: center;
+//     // gap: 15px;
+    
+//     justify-content: space-around;
+// }
 
+
+
+.exitIconContainer{
+    position: absolute;
+ left: 75em;
+ top: 8em;
+    z-index: 1000;
+    // background: yellow;
+
+}
+
+.active {
+    display: none;
+}
 
 .register{
     background: #FAB03C;
     text-align: center;
     padding: 15px 70px; 
     border: none; 
+}
+
+
+@media ((min-width: 320px) and (max-width: 480px)) {
+    .GreetingContainer {
+        width: auto;
+        border-radius: initial;
+        margin: 32px 0;
+    }
+}
+
+@media ((min-width: 481px) and (max-width: 768px)) {
+    .GreetingContainer {
+        width: auto;
+        border-radius: initial;
+        margin: 32px 0;
+    }
+
+    .exitIconContainer{
+        position: absolute;
+        top: 7.5em;
+        left: 37em;
+        z-index: 1000;
+        // background: yellow;
+    
+    }
+
 }
 

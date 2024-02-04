@@ -48,6 +48,16 @@ export const MidSection = () => {
           </div>
           <p>Law</p>
         </div>
+
+        <div className={style.courses}>
+          <div>
+            <img src={iMac} alt="" />
+          </div>
+          <p>Information Technology</p>
+        </div>
+
+        </div>
+        </div>
       
       )
-    }
+}

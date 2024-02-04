@@ -17,6 +17,10 @@ export const HomeNavbar = () => {
         <NavLink to="/LandingPage" activeStyle>
           LandingPage
         </NavLink>
+        <NavLink to="/LoginPage" activeStyle>
+          Login
+        </NavLink>
+        <NavLink to="/SignupPage" activeStyle>Signup</NavLink>
         <NavLink to="/CoursesPage" activeStyle>
           Courses
         </NavLink>

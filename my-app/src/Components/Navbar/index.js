@@ -23,6 +23,7 @@ export const Navbar = () => {
     }
   };
 
+
   const handleRegister = async () => {
     try {
       const response = await axios.post(

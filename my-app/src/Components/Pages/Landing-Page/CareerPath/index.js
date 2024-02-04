@@ -3,7 +3,7 @@ import students  from "../../../../Assets/Images/Students.svg";
 import style from "./career.module.scss";
 
 
-export const Register = () => {
+export const RegisterButton = () => {
 
     return(
         <div className={style.welcomebg}>

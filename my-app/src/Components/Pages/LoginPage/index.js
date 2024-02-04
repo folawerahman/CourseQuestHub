@@ -10,7 +10,7 @@ import { Navbar } from "../../Navbar";
 export function LoginPage() {
   return (
    
-    <Container >
+    <Container>
       <section>
         <br/>
         <Navbar/>
@@ -24,5 +24,6 @@ export function LoginPage() {
         </Col>
       </Row>
     </Container>
+
   );
 }

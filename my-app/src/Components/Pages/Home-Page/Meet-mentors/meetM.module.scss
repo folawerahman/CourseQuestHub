@@ -1,0 +1,90 @@
+.mentorContainer{ 
+    background-color: #3173C8;
+    padding: 15px;
+    
+    &>h3{
+        text-align: center;
+        color: #fff;
+    }
+}
+
+.mentorTextContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 50px;
+    gap: 70px;
+
+}
+
+.mentorCard{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin: 35px;
+    padding:  30px 15px;
+    gap: 20px;
+
+    &>p{
+        font-weight: 600;
+    }
+    
+
+    &>p>span{
+        display: block;
+        word-wrap: break-word;
+        font-weight: normal;
+    }
+}
+
+.mentor{
+    background-color: #FAB03C;
+    display: inline-block;
+    border-radius: 4em;
+    padding: 5px;
+}
+
+.forwardbutn{
+position: relative;
+left: 3rem;
+}
+
+
+// Media Queries
+
+@media ((min-width: 320px) and (max-width: 480px)) {
+    .mentorContainer{
+        margin: 70px 30px;
+        
+        &>h2{
+            text-align: center;
+          
+        }
+    }
+
+    .mentorTextContainer{
+        display: block;
+        
+    }
+}
+
+@media ((min-width: 481px) and (max-width: 768px)) {
+    .mentorTextContainer{
+        display: block;
+        
+    }
+}
+
+@media ((min-width: 769px) and (max-width: 1024px)) {
+
+}
+
+@media ((min-width: 1025px) and (max-width: 1440px)) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+}
+
+@media (min-width: 1440px) {
+
+}

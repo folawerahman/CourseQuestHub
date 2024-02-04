@@ -1,40 +1,39 @@
 import React from "react";
-import style from "./find.module.scss";
-import BlackArrow from "../../../../Assets/Images/BlackArrow.svg";
+import style from "../../Landing-Page/MidSection/mid.module.scss";
+import Hospital from "../../../../Assets/Images/Hospital.svg";
+import Law from "../../../../Assets/Images/Law.svg";
+import iMac from "../../../../Assets/Images/iMac.svg";
 
-export const FindCourse = () => {
+export const PopularCourses = () => {
   return (
-    <div className={style.StepsContainer}>
-      <h3>EXPLORE OUR WIDE ARRAY OF COURSES DESIGNED FOR YOU</h3>
+    <div className={style.MidSection}>
+      <h3>POPULAR COURSES</h3>
 
-      {/* The Three steps */}
+      {/* Explore Courses  */}
+      <div className={style.coursesContainer}>
+        <div className={style.courses}>
+          <div>
+            <img src={Hospital} alt="" />
+          </div>
+          <p>Medicine</p>
+        </div>
 
-      {/* Take Quiz */}
-      <div className={style.course}>
+        <div className={style.courses}>
+          <div>
+            <img src={Law} alt="" />
+          </div>
+          <p>Law</p>
+        </div>
 
-      </div>
+        <div className={style.courses}>
+          <div>
+            <img src={iMac} alt="" />
+          </div>
+          <p>Information Technology</p>
+        </div>
 
-      <div className={style.course}>
-          
-      </div>
-
-      <div className={style.course}>
-          
-      </div>
-
-      <div className={style.course}>
-          
-      </div>
-
-      <div className={style.course}>
-          
-      </div>
-
-      <div className={style.course}>
-          
-      </div>
-
+        </div>
+        </div>
       
-    </div>
-  );
-};
+      )
+}

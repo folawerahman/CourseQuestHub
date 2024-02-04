@@ -1,5 +1,5 @@
 import { Navbar } from "../../Navbar";
-import { Register } from "./CareerPath";
+import { RegisterButton } from "./CareerPath";
 import { MidSection } from "./MidSection";
 import { Mission } from "./UniqueFeatures";
 import { Testimonials } from "./Partners";
@@ -11,7 +11,7 @@ export const LandingPage = () => {
     return(
         <div>
             <Navbar/>
-            <Register/>
+            <RegisterButton/>
             <MidSection/>
             <Mission/>
             <Testimonials/>

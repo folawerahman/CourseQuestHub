@@ -5,7 +5,7 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #023;
+  background: #3173C8;
   color: #fff;
   height: 80px;
   padding: 10px 15px;
@@ -24,10 +24,10 @@ export const NavLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   &.active {
-    color: #4d4dff;
+    color: #023;
   }
   &:hover {
-    color: #4d4dff;
+    color: #023;
   }
 `;
 
