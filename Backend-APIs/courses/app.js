@@ -1,5 +1,5 @@
 const express = require('express');
-const router = require('./routes/courseRoute.js');
+const { router, survey } = require('./routes/courseRoute.js');
 
 const app = express();
 
@@ -16,7 +16,12 @@ app.use((req, res, next) => {
 })
 
 app.use(express.json());
+
+// Route to handle GET requests for course categories and each courses
 app.use('/courses', router);
+
+// Route to handle POST request for course recommendations
+app.use('/survey', survey);
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
