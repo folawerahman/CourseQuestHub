@@ -11,22 +11,22 @@ export const HomeNavbar = () => {
         <h4>CourseQuestHub</h4>
       </div>
       <NavMenu>
-        <NavLink to="/HomePage" activeStyle>
+        <NavLink to="/HomePage" >
           Home
         </NavLink>
-        <NavLink to="/LandingPage" activeStyle>
+        <NavLink to="/LandingPage" >
           LandingPage
         </NavLink>
-        <NavLink to="/CoursesPage" activeStyle>
+        <NavLink to="/CoursesPage">
           Courses
         </NavLink>
-        <NavLink to="/Mentors" activeStyle>
+        <NavLink to="/Mentors">
           Mentors
         </NavLink>
-        <NavLink to="/About" activeStyle>
+        <NavLink to="/About">
           About Us
         </NavLink>
-        <NavLink to="/Contact" activeStyle>
+        <NavLink to="/Contact">
           Contact Us
         </NavLink>
       </NavMenu>
