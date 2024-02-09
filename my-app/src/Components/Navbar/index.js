@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import style from "./nav.module.scss";
 import Logo from "../../Assets/Images/Logo.svg";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [loginData, setLoginData] = useState({ username: "", password: "" });
@@ -44,12 +45,16 @@ export const Navbar = () => {
       </div>
 
       <div className={style.navButton}>
-        <button className={style.loginButton} onClick={handleLogin}>
+      <Link to="/LoginPage" >
+        <button className={style.navloginButton}>
           Login
         </button>
-        <button className={style.registerButton} onClick={handleRegister}>
+        </Link>
+        <Link to="/SignupPage">
+        <button className={style.navregButton} >
           Register
         </button>
+        </Link>
       </div>
     </div>
   );

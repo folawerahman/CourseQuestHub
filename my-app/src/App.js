@@ -16,9 +16,9 @@ function App() {
     <Router>
       {/* <Navbar/> */}
       <Routes>
-        <Route exact path="/HomePage" element={<HomePage/>}></Route>
-        <Route path="/LandingPage" element=
-        {<LandingPage/>}></Route>
+        <Route exact path="/" element={<LandingPage/>}></Route>
+        <Route path="/HomePage" element=
+        {<HomePage/>}></Route>
         <Route path="/LoginPage" element={<LoginPage/>}></Route>
         <Route path="/SignupPage" element={<SignupPage/>}></Route>
       <Route path="/Course-Dashboard" element={<CoursesDashboard/>}></Route>
