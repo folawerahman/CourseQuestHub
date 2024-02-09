@@ -53,7 +53,8 @@ left: 3rem;
 
 @media ((min-width: 320px) and (max-width: 480px)) {
     .mentorContainer{
-        margin: 70px 30px;
+        margin: 70px 0px;
+       
         
         &>h2{
             text-align: center;
@@ -62,20 +63,41 @@ left: 3rem;
     }
 
     .mentorTextContainer{
-        display: block;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 20px 0px;
+        gap: 25px;
         
+    }
+
+    .mentorCard{
+        margin: 10px 0px;
+        padding:  30px 10px;
+        gap: 7px;
+    
     }
 }
 
-@media ((min-width: 481px) and (max-width: 768px)) {
+@media ((min-width: 481px) and (max-width: 767px)) {
+    
+
+}
+
+@media ((min-width: 768px) and (max-width: 1024px)) {
+    .mentorContainer{
+        margin: 70px 0px;
+    }
+
     .mentorTextContainer{
-        display: block;
+        margin: 20px 0px;
+        gap: 0px;
         
     }
-}
 
-@media ((min-width: 769px) and (max-width: 1024px)) {
-
+    .mentorCard{
+        padding:  30px 10px;
+        gap: 7px;
+    
+    }
 }
 
 @media ((min-width: 1025px) and (max-width: 1440px)) {

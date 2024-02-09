@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import style from "./comm.module.scss";
-import button from "../../Landing-Page/CareerPath/career.module.scss"
 import { DynamicButton } from "../HomeButton";
 
 

@@ -1,0 +1,160 @@
+.DashboardContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchCourses{
+    border: 1px solid #3173C8;
+    position: relative;
+    z-index: 1000;
+    // width: 30%;
+    // height: 100vh;
+    // position: relative;
+}
+
+.searchBox{
+    display: flex;
+    padding: 5px 20px;
+    align-items: center;
+    border-bottom: 1px solid #3173C8;
+    // border-radius: 8px;
+    transition: background 0.25s;
+  }
+  
+  .searchBox:hover{
+  border: 1px solid #3173C8;
+  }
+  //use onHover state for this}
+  
+  .searchBox:focus-within{
+    border: 2px solid #3173C8;
+  }
+
+  .input {
+    background: transparent;
+    border: none;
+    color: #023;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    flex: 1;
+  }
+
+  .MidSection {
+    margin: 3.5em 5em;
+  
+    &>h3 {
+      text-align: center;
+    }
+  
+    &>.coursesContainer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 100px;
+      grid-auto-rows: minmax(170px, auto);
+  
+  
+      &>.courses {
+        border: 1px solid #3771C8;
+        box-shadow: 0px 4px 4px 0px rgba(55, 113, 200, 0.3);
+        text-align: center;
+  
+        &>* {
+          margin: 15px;
+        }
+  
+      }
+    }
+  
+  
+  }
+  
+  
+  
+  // Media Queries
+  
+  @media ((min-width: 320px) and (max-width: 480px)) {
+    .DashboardContainer{
+        display: block;
+        
+    }
+
+
+    .MidSection {
+      margin: 1.5em 2em;
+  
+      &>.coursesContainer {
+        grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+      }
+    }
+  
+      // .searchBox {
+    //   // padding: 8px;
+    // }
+
+    // .input {
+    // //   min-width: 100px;
+    // }
+  
+  
+  }
+  
+  @media ((min-width: 481px) and (max-width: 768px)) {
+    .DashboardContainer{
+      display: block;
+      
+  }
+    .MidSection {
+      margin: 3.5em 2em;
+  
+  
+      &>.coursesContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+      }
+    }
+
+    .searchBox {
+          padding: 8px;
+          gap: 0px;
+        }
+  }
+  
+  @media ((min-width: 769px) and (max-width: 1024px)) {
+    
+  }
+  
+  @media ((min-width: 1025px) and (max-width: 1440px)) {}
+  
+  @media (min-width: 1200px) and (max-width: 1440px) {
+
+
+    .MidSection {
+
+      &>.coursesContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 100px;
+        grid-auto-rows: minmax(170px, auto);
+    
+    
+        &>.courses {
+          border: 1px solid #3771C8;
+          box-shadow: 0px 4px 4px 0px rgba(55, 113, 200, 0.3);
+          text-align: center;
+    
+          &>* {
+            margin: 15px;
+          }
+    
+        }
+      }
+    
+    
+    }
+  }
+  
+  @media (min-width: 1440px) {}
+
+  
