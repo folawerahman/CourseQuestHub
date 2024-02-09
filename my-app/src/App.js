@@ -9,6 +9,7 @@ import { SignupPage } from "./Components/Pages/SignupPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Signup } from "./Components/Pages/Register/Signup";
 import { CoursesDashboard } from "./Components/Pages/Courses-Page/Course-Dashboard";
+import { DynamicCourses } from "./Components/Pages/Courses-Page/Course-Dashboard/Courses";
 
 
 function App() {
@@ -22,7 +23,10 @@ function App() {
         <Route path="/LoginPage" element={<LoginPage/>}></Route>
         <Route path="/SignupPage" element={<SignupPage/>}></Route>
       <Route path="/Course-Dashboard" element={<CoursesDashboard/>}></Route>
+      <Route path="/Courses" element={<DynamicCourses/>}></Route>
+      
       </Routes>
+      
     </Router>
   );
 }

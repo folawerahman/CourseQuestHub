@@ -5,10 +5,13 @@ import styled from "styled-components";
 import facebook from "../../Assets/Images/logos_facebook.svg";
 import insta from "../../Assets/Images/skill-icons_instagram.svg";
 import twitter from "../../Assets/Images/devicon_twitter.svg";
+import { Copyright } from "./copyright";
 
 
 export const Footer = () => {
     return(
+        <div>
+
         <div className={style.footerContainer}>
 
         <div className={style.contactContainer}>
@@ -40,7 +43,8 @@ export const Footer = () => {
 
             </div>
         </div>
-        <div className={style.copyright}>Contact us | Copyright 2024. All rights reserved.</div>
+        </div>
+        <Copyright/>
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import style from "../../Landing-Page/MidSection/mid.module.scss";
 import style from "./course.module.scss"
 import Hospital from "../../../../Assets/Images/Hospital.svg";
@@ -8,10 +8,14 @@ import Grouptask from "../../../../Assets/Images/Group-Task.svg";
 import Law from "../../../../Assets/Images/Law.svg";
 import iMac from "../../../../Assets/Images/iMac.svg";
 import { HomeNavbar } from "../../Home-Page/HomeNavBar";
-
+import { DynamicCourses } from "./Courses";
+import { element } from "prop-types";
+import { Route, Router, Routes } from "react-router";
 
 
 export const CoursesDashboard = () => {
+
+
     return (
             <div>
             <HomeNavbar/>
@@ -33,6 +37,7 @@ export const CoursesDashboard = () => {
 
       {/* Explore Courses  */}
       <div className={style.coursesContainer}>
+  
         <div className={style.courses}>
           <div>
             <img src={Hospital} alt="" />

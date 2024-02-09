@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import style from "../../Landing-Page/UniqueFeatures/uniF.module.scss";
-import button from "../../Landing-Page/CareerPath/career.module.scss";
+import style from "../Community/comm.module.scss"
+import styleQ from "./quiz.module.scss"
 import { DynamicButton } from "../HomeButton";
 
 export const TakeQuiz = () => {
@@ -9,11 +9,12 @@ export const TakeQuiz = () => {
         background: '#FAB03C',
         border: 'none',
         padding: '10px 100px',
-        borderRadius: '30px'
+        borderRadius: '30px',
+        fontSize: '1.2em',
     };
 
   return (
-    <div className={style.missionContainer}>
+    <div className={styleQ.quizContainer}>
       <div className={style.MissionText}>
         <h2>GET MATCHED WITH YOUR PERFECT CAREER FIT!</h2>
         <p>
