@@ -9,20 +9,18 @@ import { Navbar } from "../../Navbar";
 
 export function SignupPage() {
   return (
-   
-    <Container >
-      <section>
-        <br/>
-        <Navbar/>
-      </section>
-      <Row className="mx-auto p-3">
-        <Col>
+
+    <Container className=" container-fluid min-vh-100" >
+      <div className="border rounded-5 p-3 bg-white shadow" width="930px" >
+      <Row className="rounded justify-content-center align-items-center overflow-auto mx-auto">
+        <Col className="col-md-6 img-fluid flex-column  ">
           <Sideimage/>
         </Col>
-        <Col>
+        <Col className="col-md-6">
           <Signupform/>
         </Col>
       </Row>
+      </div>
     </Container>
   );
 }

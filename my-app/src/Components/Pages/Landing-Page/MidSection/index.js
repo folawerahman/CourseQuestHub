@@ -11,6 +11,7 @@ export const MidSection = () => {
   return (
     <div className={style.MidSection}>
       <h3>EXPLORE OUR WIDE ARRAY OF COURSES DESIGNED FOR YOU</h3>
+    
 
       {/* Explore Courses  */}
       <div className={style.coursesContainer}>
@@ -20,6 +21,7 @@ export const MidSection = () => {
           </div>
           <p>Medicine</p>
         </div>
+        
 
         <div className={style.courses}>
           <div>
