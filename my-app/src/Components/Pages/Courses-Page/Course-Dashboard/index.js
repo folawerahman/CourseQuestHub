@@ -12,7 +12,7 @@ import { Footer } from "../../../Footer";
 import { Search } from "./Courses/search";
 import { NavLink as Link } from "react-router-dom";
 import styled from "styled-components";
-import { faPeopleRobbery } from "@fortawesome/free-solid-svg-icons";
+
 
 export const CoursesDashboard = () => {
   return (
