@@ -16,7 +16,7 @@ export const Footer = () => {
 
         <div className={style.contactContainer}>
             <div>
-                <h5> Contact Us</h5>
+                <p className={style.boldP}> Contact Us</p>
                 <NavLink to="tel:09033265715">Phone 1: 09033265715</NavLink>
                 <NavLink to="tel:08192523881">Phone 2: 08192523881</NavLink>
                 <NavLink to="mailto:coursequesthub@gmail.com">Email: coursequesthub@gmail.com</NavLink>
@@ -25,7 +25,7 @@ export const Footer = () => {
             </div>
 
             <div className={style.socials}>
-            <h5> Connect With Us on Social Media</h5>
+            <p className={style.boldP}> Connect With Us on Social Media</p>
             <span>
             <img src={insta}/>
             <NavLink to="insta:coursequesthub">coursequesthub</NavLink>
@@ -41,6 +41,11 @@ export const Footer = () => {
                 <NavLink to="facebook:coursequesthub">coursequesthub</NavLink>
             </span>
 
+            </div>
+
+            <div className={style.subscribe}>
+                <p className={style.boldP}>Subscribe for Updates</p>
+                <input type="text" placeholder="Enter your email"></input>
             </div>
         </div>
         </div>

@@ -3,6 +3,7 @@
 
   &>h3 {
     text-align: center;
+    margin-bottom: 40px;
   }
 
   &>.coursesContainer {
@@ -33,7 +34,7 @@
 
 @media ((min-width: 320px) and (max-width: 480px)) {
   .MidSection {
-    margin: 3em 5em;
+    margin: 3em;
 
     .coursesContainer {
       grid-template-columns: none;
@@ -43,11 +44,12 @@
 
 
 
+
 }
 
 @media ((min-width: 481px) and (max-width: 768px)) {
   .MidSection {
-    margin: 3em ;
+    margin: 3em;
 
 
     &>.coursesContainer {
@@ -56,8 +58,17 @@
   }
 }
 
+
+
 @media ((min-width: 769px) and (max-width: 1024px)) {
-  
+  .MidSection {
+    margin: 4em ;
+
+
+    &>.coursesContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
 
 @media ((min-width: 1025px) and (max-width: 1440px)) {}

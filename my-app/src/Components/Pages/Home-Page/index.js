@@ -5,7 +5,7 @@ import { Footer } from "../../Footer";
 import { TakeQuiz } from "./TakeQuiz";
 import { PopularCourses } from "./FindCourse";
 import { MeetMentors } from "./Meet-mentors";
-import { JoinCommunity } from "./Community";
+import { JoinCommunity } from "./Community-Button";
 import { WatchVideo } from "./watch video";
 
 

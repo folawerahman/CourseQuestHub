@@ -18,7 +18,7 @@ export const Vision = () => {
             </div>
 
             <div className={style.workman}>
-                <img src={workman}/>
+                <img src={workman} alt="" className={style.workman}/>
             </div>
 
         </div>

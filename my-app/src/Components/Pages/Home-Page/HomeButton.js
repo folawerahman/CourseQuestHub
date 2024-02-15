@@ -1,24 +1,10 @@
 import React, { useState } from "react";
 
-export const DynamicButton = ({ style, value }) => {
-//   const [ButtonState, setButtonState] = useState(style);
-
-//   const newBackground = () => {
-//     if (ButtonState === style) {
-//       setButtonState(changeBgColor);
-//     } else {
-//         setButtonState(style);
-//     }
-//   };
-
-// const changeBgColor = {
-//     background: '#023',
-//     display: 'none'
-// }
+export const DynamicButton = ({ style, value, communityPage }) => {
 
   return (
     <div>
-      <button style={style}>
+      <button style={style} onClick={communityPage}>
         {value}
       </button>
     </div>

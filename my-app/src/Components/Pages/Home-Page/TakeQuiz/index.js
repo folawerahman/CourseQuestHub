@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "../Community/comm.module.scss"
+import style from "../Community-Button/comm.module.scss"
 import styleQ from "./quiz.module.scss"
 import { DynamicButton } from "../HomeButton";
 
@@ -8,9 +8,9 @@ export const TakeQuiz = () => {
     const handleQuiz = {
         background: '#FAB03C',
         border: 'none',
-        padding: '10px 100px',
+        padding: '10px 65px',
         borderRadius: '30px',
-        fontSize: '1.2em',
+        fontWeight: 500,
     };
 
   return (

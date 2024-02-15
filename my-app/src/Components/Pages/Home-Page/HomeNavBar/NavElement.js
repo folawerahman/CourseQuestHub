@@ -5,84 +5,63 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #3173C8;
-  color: #fff;
-  // height: 80px;
-  padding: 10px 15px;
+  padding: 10px 20px;
 
-  &>.mobileContainer{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-
-   &>.logo{
+  .logo {
     display: inherit;
     align-items: center;
+    font-weight: 700;
 
-    &>p{
+    & > p {
       margin: 0px;
     }
-   }
-
-
-   &>.hamburger{
-     display: none;
-
-    @media ((min-width: 320px) and (max-width: 480px)) { 
-      // background: #000;
-      padding: 0px 10px;
-      display: block;
-  
-  }
-   }
   }
 
+  .desktopMenu {
+    @media ((min-width: 320px) and (max-width: 1024px)) {
+      display: none;
+    }
+  }
 
+  .hamburger {
+    // Hide hamburger on big screen
+    display: none;
 
-  // & > div> img   {
-  //   color: #023;
-  //   margin-bottom: 0px;
-  //   display: none;
-  // }
-
-  @media ((min-width: 320px) and (max-width: 480px)) { 
+    // Show hamburger on mobile
+    @media ((min-width: 320px) and (max-width: 1024px)) {
       // background: #000;
-      padding: 0px ;
+      padding: 0px 20px;
       display: block;
-  
+    }
+  }
+
+  .mobileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media ((min-width: 320px) and (max-width: 1024px)) {
+    display: block;
   }
 `;
 
 export const NavLink = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: #000;
   padding: 0 0.5rem;
   cursor: pointer;
+
   &.active {
-    color: #023;
-  }
-  &:hover {
-    color: #023;
-  }
-
-  @media ((min-width: 320px) and (max-width: 480px)) { 
-    padding: 0rem;
-  
+    color: #fff;
+    background: #023;
+    border-radius: 10px;
+    padding: 2px 20px;
   }
 
-
-`;
-
-export const NavMenu = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: 24px;
-  text-wrap: wrap;
-  // white-space: nowrap;
-
-  @media ((min-width: 320px) and (max-width: 480px)) { 
-    display: none;
-  
+  @media ((min-width: 320px) and (max-width: 1024px)) {
+    padding: 1.2rem 0rem;
+    color: #fff;
+    display: block;
   }
 `;
-

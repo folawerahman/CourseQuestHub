@@ -23,9 +23,8 @@ margin: 0px 30px;
     
     }
    
-    .workman img{
-        width: 120px;
-        
+    .workman{
+        width: 120px; 
     }
 
     .visionText {
@@ -40,10 +39,10 @@ margin: 0px 30px;
 }
 
 @media ((min-width: 481px) and (max-width: 768px)) {
-    .workman img{
-        margin: 70px auto;
-        width: 220px;
-        height: 200px;
+    .workman{
+        margin: 60px auto;
+        // width: 250px;
+        // height: 150px;
         
     }
 
@@ -79,7 +78,12 @@ margin: 0px 30px;
     }
     }
 
+    .workman{
+        width: 700px;
+        height: 584px;
+    }
 }
+
 
 @media (min-width: 1440px) {
 
