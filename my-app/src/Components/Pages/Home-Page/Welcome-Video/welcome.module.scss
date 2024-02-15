@@ -1,38 +1,18 @@
 .GreetingContainer {
-    padding: 15px ;
+    padding: 15px;
     background-color: #023;
-    // border-radius: 30px;
     color: #fff;
-    margin: 32px 0;
     text-align: center;
-    // position: relative;
+
+    
+}
+
+.greetingText{
+    padding-top: 40px;
 
     &>*{
-        padding-bottom: 10px
+        padding-bottom: 15px
     }
-}
-
-// .greetingCard{
-//     // display: flex;
-//     // align-items: center;
-//     // gap: 15px;
-    
-//     justify-content: space-around;
-// }
-
-
-
-.exitIconContainer{
-    position: absolute;
- left: 75em;
- top: 8em;
-    z-index: 1000;
-    // background: yellow;
-
-}
-
-.active {
-    display: none;
 }
 
 .register{
@@ -44,28 +24,10 @@
 
 
 @media ((min-width: 320px) and (max-width: 480px)) {
-    .GreetingContainer {
-        width: auto;
-        border-radius: initial;
-        margin: 32px 0;
-    }
+
 }
 
 @media ((min-width: 481px) and (max-width: 768px)) {
-    .GreetingContainer {
-        width: auto;
-        border-radius: initial;
-        margin: 32px 0;
-    }
-
-    .exitIconContainer{
-        position: absolute;
-        top: 7.5em;
-        left: 37em;
-        z-index: 1000;
-        // background: yellow;
-    
-    }
-
+ 
 }
 

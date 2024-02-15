@@ -3,6 +3,7 @@ import axios from "axios";
 import style from "./nav.module.scss";
 import Logo from "../../Assets/Images/Logo.svg";
 import { Link } from "react-router-dom";
+import { HomeNavbar } from "../Pages/Home-Page/HomeNavBar";
 
 export const Navbar = () => {
   const [loginData, setLoginData] = useState({ username: "", password: "" });
@@ -41,7 +42,7 @@ export const Navbar = () => {
     <div className={style.navContainer}>
       <div className={style.logo}>
         <img src={Logo} alt="CourseQuestHub" />
-        <h4>CourseQuestHub</h4>
+        <p>CourseQuestHub</p>
       </div>
 
       <div className={style.navButton}>

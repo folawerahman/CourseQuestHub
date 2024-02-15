@@ -6,15 +6,24 @@ import ArtPrices from "../../../../Assets/Images/Art-Prices.svg";
 import Grouptask from "../../../../Assets/Images/Group-Task.svg";
 import Law from "../../../../Assets/Images/Law.svg";
 import iMac from "../../../../Assets/Images/iMac.svg";
+import { useNavigate } from "react-router";
 
 export const MidSection = () => {
+
+  const navigate = useNavigate();
+
+  const navigateToRegister = () => {
+    // 👇️ navigate to /register
+    navigate('/SignupPage');
+  };
+
   return (
     <div className={style.MidSection}>
-      <h3>EXPLORE OUR WIDE ARRAY OF COURSES DESIGNED FOR YOU</h3>
+      <h3>EXPLORE WIDE ARRAY OF COURSES DESIGNED FOR YOU</h3>
     
 
       {/* Explore Courses  */}
-      <div className={style.coursesContainer}>
+      <div className={style.coursesContainer} onClick={navigateToRegister}>
         <div className={style.courses}>
           <div>
             <img src={Hospital} alt="" />

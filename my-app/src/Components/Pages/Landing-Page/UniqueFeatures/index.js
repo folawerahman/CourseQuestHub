@@ -10,7 +10,7 @@ export const Mission = () => {
         <div className={style.missionContainer}>
 
             <div className={style.scientist}>
-                <img src={Scientist} alt=""/>
+                <img src={Scientist} alt="" className={style.scientistImg}/>
             </div>
 
             <div className={style.MissionText}>

@@ -1,13 +1,10 @@
-.JoinButton{
-    background: #3173C8;
-    color: #fff;
-    border: none;
-    padding: 10px 30px;
+// .JoinButton{
+//     background: #3173C8;
+//     color: #fff;
+//     border: none;
+//     padding: 10px 30px;
 
-}
-
-.missionContainer{
-}
+// }
 
 .MissionText {
 text-align: center;
@@ -40,7 +37,7 @@ margin: 0px 30px;
 }
 
 @media ((min-width: 481px) and (max-width: 768px)) {
-    .scientist img{
+    .scientistImg{
         width: 200px;
         height: 200px;
         // margin: 60px auto;

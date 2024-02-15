@@ -4,7 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import { LandingPage, HomePage, Navbar, Register, LoginPage} from "./Components";
+import { LandingPage, HomePage, Navbar, Register, LoginPage, Community, Plumbing, Medicine, SoftwareEng, Lawyer, Teaching} from "./Components";
 import { SignupPage } from "./Components/Pages/SignupPage";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Signup } from "./Components/Pages/Register/Signup";
@@ -24,6 +24,14 @@ function App() {
         <Route path="/SignupPage" element={<SignupPage/>}></Route>
       <Route path="/Course-Dashboard" element={<CoursesDashboard/>}></Route>
       <Route path="/Courses" element={<DynamicCourses/>}></Route>
+      <Route path="/Community-Page" element={<Community/>}></Route>
+      <Route path="/Plumbing" element={<Plumbing/>}></Route>
+      <Route path="/medicine" element={<Medicine/>}></Route>
+      <Route path="/Software-Eng" element={<SoftwareEng/>}></Route>
+      <Route path="/Law" element={<Lawyer/>}></Route>
+      <Route path="/Teaching" element={<Teaching/>}></Route>
+
+
       
       </Routes>
       

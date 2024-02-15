@@ -11,8 +11,8 @@ export const Greeting = () => {
     // }
   
       return(
-          <div>
-  <section className={style.GreetingContainer}>
+          <div className={style.GreetingContainer}>
+  <section className={style.greetingText}>
         <h4>Welcome John</h4>
       <div className={style.greetingCard}>
         <div className={style.g}>

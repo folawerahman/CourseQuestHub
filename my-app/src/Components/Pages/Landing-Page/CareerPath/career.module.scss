@@ -1,15 +1,15 @@
 .welcomebg{
-    // height: 50vw;
-    background-image: url(../../../../Assets/Images/Students.svg);
+    background: #023;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding: 35px;   
+    padding: 35px; 
 
     &>.welcomeContainer{
         margin: 0px;
-        text-align: center;
+        margin-top: 60px;
+        text-align: center;   
 
         
         
@@ -26,21 +26,34 @@
 .register{
     background: #FAB03C;
     text-align: center;
-    padding: 15px 70px; 
+    padding: 12px 70px; 
     border: none; 
+    border-radius: 30px;
+}
+
+.studentImg{
+    width:550px;
+    margin-bottom: 25px;
 }
 
 
 @media ((min-width: 320px) and (max-width: 480px)) {
     .register{
-        padding: 15px 25px;
+        padding: 10px 35px;
         margin-bottom: 15px; 
 
+    }
+
+    .studentImg{
+        width:200px;
     }
 }
 
 @media ((min-width: 481px) and (max-width: 768px)) {
-
+    .studentImg{
+        width:380px;
+       
+    }
 }
 
 @media ((min-width: 769px) and (max-width: 1024px)) {
